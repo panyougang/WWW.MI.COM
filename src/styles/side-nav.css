@@ -1,0 +1,174 @@
+@charset 'utf-8';
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+.demo {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, "微软雅黑";
+  font-size: 12px;
+  color: #434343;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+  font-size: 0px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  display: block;
+}
+/*一般链接*/
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+.side-nav {
+  position: fixed;
+  left: 50%;
+  margin-left: 613px;
+  bottom: 40px;
+  z-index: 1000;
+}
+.side-nav .user {
+  box-sizing: border-box;
+  height: 180px !important;
+  left: -144px !important;
+  background-color: #fff;
+  z-index: 200;
+  padding: 0 15px !important;
+}
+.side-nav .user img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 6px auto;
+}
+.side-nav .user span {
+  display: block;
+  width: 76px;
+  margin: 0 auto;
+}
+.side-nav .iconfont:hover {
+  color: #ff6709;
+}
+.side-nav .side-info {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.side-nav .side-info p {
+  position: absolute;
+  top: 5px;
+  height: 28px;
+  border: 1px solid #f5f5f5;
+  left: -86px;
+  line-height: 28px;
+  padding: 0 8px;
+  color: #757575;
+  font-size: 14px;
+  z-index: 199;
+  background-color: #fff;
+}
+.side-nav .side-info .arrowhead {
+  left: -12px;
+  top: 13px;
+  position: absolute;
+  display: inline-block;
+  border-left: 6px solid #fff;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
+.side-nav .side-list {
+  border: 1px solid #f5f5f5;
+}
+.side-nav .side-list li {
+  background-color: #fff;
+  position: relative;
+  width: 25px;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+  line-height: 40px;
+}
+.side-nav .side-list li:hover .side-info {
+  display: block;
+}
+.side-nav .side-list li .iconfont {
+  font-size: 20px;
+}
+.side-nav .side-list li .count {
+  padding: 0 5px;
+}
+.side-nav .side-list li .car {
+  left: -103px;
+}
+.side-nav .return-top {
+  position: relative;
+  background-color: #fff;
+  display: block;
+  margin-top: 15px;
+  border: 1px solid #f5f5f5;
+  width: 25px;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+  line-height: 40px;
+  color: #434343;
+}
+.side-nav .return-top:hover .side-info {
+  display: block;
+}
+.side-nav .return-top .top-title {
+  left: -72px;
+}
+.side-nav .return-top .icon-dingbu {
+  font-size: 20px;
+}

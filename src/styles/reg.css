@@ -1,0 +1,331 @@
+@charset 'utf-8';
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+.demo {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, "微软雅黑";
+  font-size: 12px;
+  color: #434343;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+  font-size: 0px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  display: block;
+}
+/*一般链接*/
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+body {
+  background: #F9F9F9;
+}
+body .login {
+  width: 854px;
+  margin: 0 auto;
+  background: #FFFFFF url(../img/img-reg/logo.png) no-repeat center top;
+  padding-top: 90px;
+  position: relative;
+}
+body .login .wenhao {
+  width: 24px;
+  height: 24px;
+  background: url(../img/img-reg/wenhao.png) no-repeat;
+  position: absolute;
+  top: 10px;
+  right: -48px;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+body .login .title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: normal;
+}
+body .login .form {
+  width: 332px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+body .login .form .display {
+  display: block !important;
+}
+body .login .form h4 {
+  font-weight: normal;
+}
+body .login .form .city {
+  width: 332px;
+  height: 42px;
+  border: 1px solid #e8e8e8;
+  margin: 5px 0;
+  line-height: 42px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+body .login .form .city .city-list {
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  left: -1px;
+  top: 42px;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  overflow-y: scroll;
+  background: #fff;
+  display: none;
+  z-index: 100;
+}
+body .login .form .city .city-list .cityInput {
+  outline: none;
+  border: 1px solid #e8e8e8;
+  width: 274px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px 10px 5px 10px;
+  display: block;
+  margin: 10px auto;
+}
+body .login .form .city .city-list .data .init {
+  line-height: 30px;
+  background: #fcdecc;
+  margin-bottom: 5px;
+}
+body .login .form .city .city-list .data .init p {
+  padding-left: 10px;
+  color: #ef5b00;
+}
+body .login .form .city .city-list .data .data-city > li {
+  padding-left: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+body .login .form .city .city-list .data .data-city > li:hover {
+  background: #EAEAEA;
+}
+body .login .form .city .city-name {
+  width: 200px;
+  float: left;
+  color: #555;
+}
+body .login .form .city .ico {
+  float: right;
+  border-left: 1px solid #e8e8e8;
+  width: 40px;
+  height: 100%;
+}
+body .login .form .city .ico span {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 100%;
+  background: url(../img/img-reg/icon.png) no-repeat 3px 12px;
+}
+body .login .form p {
+  color: #666;
+}
+body .login .form .phone-title {
+  margin-top: 16px;
+}
+body .login .form .phoneName {
+  width: 331px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+  margin-top: 8px;
+}
+body .login .form .phoneName .phone {
+  float: left;
+  width: 68px;
+  height: 100%;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+  position: relative;
+}
+body .login .form .phoneName .phone .phone-city-list {
+  position: absolute;
+  width: 330px;
+  height: 270px;
+  left: -1px;
+  top: 42px;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  overflow-y: scroll;
+  background: #fff;
+  display: none;
+}
+body .login .form .phoneName .phone .phone-city-list .cityInput {
+  outline: none;
+  border: 1px solid #e8e8e8;
+  width: 274px;
+  height: 22px;
+  line-height: 22px;
+  padding: 5px 10px 5px 10px;
+  display: block;
+  margin: 10px auto;
+}
+body .login .form .phoneName .phone .phone-city-list .data .init {
+  line-height: 30px;
+  background: #fcdecc;
+  margin-bottom: 5px;
+}
+body .login .form .phoneName .phone .phone-city-list .data .init p {
+  padding-left: 10px;
+  color: #ef5b00;
+}
+body .login .form .phoneName .phone .phone-city-list .data .data-city > li {
+  padding-left: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  line-height: 40px;
+}
+body .login .form .phoneName .phone .phone-city-list .data .data-city > li:hover {
+  background: #EAEAEA;
+}
+body .login .form .phoneName .phone .phone-num {
+  height: 100%;
+  float: left;
+  color: #555;
+  line-height: 40px;
+  margin-left: 14px;
+}
+body .login .form .phoneName .phone .jiantou {
+  float: left;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #9d9d9d;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  margin: 17px 0 0 10px;
+}
+body .login .form .phoneName .phoneInput {
+  outline: none;
+  border: 0;
+  color: #333;
+  display: block;
+  margin-top: 11px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+body .login .form .msg {
+  margin-top: 8px;
+}
+body .login .form .msg i {
+  color: #f66;
+  font-style: normal;
+}
+body .login .form .msg i span {
+  padding-left: 20px;
+  background: url(../img/img-reg/icon.png) no-repeat -47px 0;
+}
+body .login .form .right-reg {
+  outline: none;
+  border: none;
+  width: 330px;
+  height: 42px;
+  background: #ff6700;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+  cursor: pointer;
+}
+body .login .form .right-reg:hover {
+  opacity: 0.5;
+}
+body .login .form .agree {
+  text-align: center;
+  margin-top: 80px;
+  color: #9d9d9d;
+  cursor: pointer;
+  padding-bottom: 42px;
+}
+body .login .form .agree a {
+  color: #333;
+  font-weight: bold;
+}
+body .language {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #757575;
+}
+body .language span {
+  padding: 0 10px;
+}
+body .language span:hover {
+  color: #333;
+  cursor: pointer;
+}
+body .language .sp-fis {
+  color: #333;
+}
+body .record {
+  text-align: center;
+  padding: 15px 0 25px 0;
+  color: #9d9d9d;
+  font-size: 14px;
+}
+body .record span {
+  padding-left: 19px;
+  padding-top: 8px;
+  background: url(../img/img-reg/jinghui.png) no-repeat;
+  cursor: pointer;
+}
+body .record a {
+  color: #9d9d9d;
+  cursor: pointer;
+}

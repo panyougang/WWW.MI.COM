@@ -1,0 +1,466 @@
+@charset 'utf-8';
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+.demo {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, "微软雅黑";
+  font-size: 12px;
+  color: #434343;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+  font-size: 0px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  display: block;
+}
+/*一般链接*/
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+.main {
+  height: 100%;
+  background: url(../img/img-login/banner.a0e6fbf0.jpg) no-repeat;
+  background-size: 375px;
+  display: flex;
+}
+.main .login-left {
+  width: 375px;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.main .login-right {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+  float: left;
+  overflow-y: scroll;
+}
+.main .login-right .login-help {
+  padding: 0px 0 40px 0;
+}
+.main .login-right .login-help .login-log {
+  width: 40px;
+  height: 40px;
+  background: url(../img/img-login/logo-mi2.png) no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+.main .login-right .login-help h1 {
+  float: left;
+  line-height: 40px;
+  margin-left: 9px;
+}
+.main .login-right .login-help .help {
+  height: 40px;
+  float: right;
+}
+.main .login-right .login-help .help .line {
+  margin: 0 10px;
+  opacity: 0.5;
+}
+.main .login-right .login-help .help .help-a {
+  line-height: 40px;
+  color: #838383;
+  font-size: 14px;
+  margin: 0 10px;
+}
+.main .login-right .login-help .help .language {
+  position: relative;
+  float: right;
+}
+.main .login-right .login-help .help .language .language-cha {
+  position: relative;
+  margin-right: 30px;
+  float: left;
+}
+.main .login-right .login-help .help .language .language-cha .arrows {
+  position: absolute;
+  left: 71px;
+  top: 18px;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.65);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transition: all 0.2s;
+  transform-origin: 50% 0px;
+}
+.main .login-right .login-help .help .language:hover .language-cha {
+  color: #ff6700;
+}
+.main .login-right .login-help .help .language:hover .arrows {
+  border-top-color: #ff6700;
+  transform: rotateZ(180deg) translateY(-2.5px);
+  transform-origin: 50% 0;
+}
+.main .login-right .login-help .help .language .language-block {
+  text-align: center;
+  line-height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+  height: 0;
+  transition: all 0.2s;
+  box-shadow: 0 20px 50px 0 hsla(0, 0%, 64%, 0.1);
+}
+.main .login-right .login-help .help .language .language-block .a1 {
+  display: block;
+  width: 90px;
+  transition: all 0.2s;
+  margin: 0;
+}
+.main .login-right .login-help .help .language .a1:hover {
+  background-color: #FFF3E6;
+}
+.main .login-right .login-help .help .language:hover .language-block {
+  height: 80px;
+}
+.main .login-right .login-help .help > .help-a:hover {
+  color: #ff6700;
+}
+.main .login-right .form {
+  overflow: hidden;
+  text-align: left;
+  border-radius: 4px;
+  padding: 40px 45px 0px 45px;
+  margin: 40px auto 80px;
+  box-shadow: 0 20px 50px 0 hsla(0, 0%, 64%, 0.1);
+  width: 360px;
+  position: relative;
+  height: 570px;
+}
+.main .login-right .form .display {
+  display: none;
+}
+.main .login-right .form .mi-qr-login-switch {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-color: #ff5c00 #ff5c00 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 32px;
+  background-size: cover;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+.main .login-right .form .mi-qr-login-switch:hover {
+  opacity: 1;
+}
+.main .login-right .form .mi-qr-login-switch:hover .scan-code {
+  display: block;
+}
+.main .login-right .form .mi-qr-login-switch .scan-code {
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #ff5c00;
+  position: absolute;
+  left: -128px;
+  top: -20px;
+  display: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.main .login-right .form .mi-qr-login-switch .scan-code span {
+  position: absolute;
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(255, 105, 0, 0.45);
+  width: 10px;
+  height: 10px;
+  border-width: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  right: -5px;
+  background: #ff5c00;
+}
+.main .login-right .form .mi-qr-login-switch .mi-qr-login-switch__icon {
+  position: absolute;
+  font-size: 36px;
+  top: -22px;
+  right: -22px;
+}
+.main .login-right .form .mi-qr-login-switch .anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.main .login-right .form .mi-qr-login-switch .anticon svg {
+  display: inline-block;
+}
+.main .login-right .form .mi-qr-login-switch .anticon svg:not(:root) {
+  overflow: hidden;
+}
+.main .login-right .form .scan-login .scan-login-himt h2 {
+  margin: 0 auto 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  line-height: 40px;
+}
+.main .login-right .form .scan-login .scan-login-code {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+}
+.main .login-right .form .scan-login .scan-login-code .scan-login-code-log {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.main .login-right .form .scan-login .scan-login-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 24px;
+  margin-top: 24px;
+}
+.main .login-right .form .scan-login .scan-login-app {
+  margin-top: 50px;
+}
+.main .login-right .form .scan-login .scan-login-app .scan-login-app-title {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.45;
+  padding: 8px 0;
+  color: #aaa;
+}
+.main .login-right .form .scan-login .scan-login-app .scan-login-app-log {
+  display: flex;
+  justify-content: center;
+}
+.main .login-right .form .scan-login .scan-login-app .scan-login-app-log > :nth-child(2) {
+  margin: 0 30px;
+}
+.main .login-right .form .scan-login .scan-login-app .scan-login-app-log .scan-login-app-log-part img {
+  width: 46px;
+  height: 46px;
+}
+.main .login-right .form .scan-login .scan-login-app .scan-login-app-log .scan-login-app-log-part p {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 12px;
+}
+.main .login-right .form .agree {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 8px;
+}
+.main .login-right .form .agree a {
+  color: #333;
+}
+.main .login-right .form .reg-title {
+  margin-top: 5px !important;
+}
+.main .login-right .form .form-all {
+  position: absolute;
+  height: 471px;
+  width: 100%;
+  left: 0px;
+  transition: all 0.2s;
+}
+.main .login-right .form .form-container {
+  padding: 0 45px;
+}
+.main .login-right .form .form-login {
+  position: absolute;
+  z-index: 100;
+  height: 471px;
+  width: 100%;
+  left: 0;
+}
+.main .login-right .form .form-reg {
+  position: absolute;
+  z-index: 100;
+  height: 471px;
+  width: 100%;
+  left: 450px;
+}
+.main .login-right .form .form-title {
+  position: relative;
+}
+.main .login-right .form .form-title .lineae {
+  width: 44px;
+  height: 4px;
+  background-color: #ff5c00;
+  border-radius: 2px;
+  margin-top: 3px;
+  position: absolute;
+}
+.main .login-right .form .form-title > span {
+  color: #333;
+  font-weight: 500;
+  font-size: 22px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.main .login-right .form .form-title > :nth-child(2) {
+  color: #bbb;
+}
+.main .login-right .form .form-container {
+  margin-top: 25px;
+}
+.main .login-right .form .form-container .user {
+  margin-bottom: 10px;
+}
+.main .login-right .form .form-container .common {
+  padding: 0 20px;
+  background: #F9F9F9;
+  height: 60px;
+  position: relative;
+}
+.main .login-right .form .form-container .common .input {
+  position: absolute;
+  user-select: none;
+  border: none;
+  background: #F9F9F9;
+  width: 270px;
+  height: 30px;
+  top: 15px;
+}
+.main .login-right .form .form-container .common > p {
+  color: rgba(0, 0, 0, 0.4);
+  height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+}
+.main .login-right .form .form-container .msg {
+  color: #f04645;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.main .login-right .form .form-container .log-btn {
+  border: none;
+  cursor: default;
+  opacity: 0.4;
+  background-color: #ff5c00;
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.main .login-right .form .form-container .other-way {
+  font-size: 17px;
+  overflow: hidden;
+}
+.main .login-right .form .form-container .other-way > :nth-child(1) {
+  color: #ff5c00;
+  float: left;
+}
+.main .login-right .form .form-container .other-way > :nth-child(2) {
+  color: #ff5c00;
+  float: right;
+}
+.main .login-right .form .form-container .other-way-title {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 40px;
+  margin-top: 70px;
+}
+.main .login-right .form .form-container .other-way-icon {
+  padding: 0 38px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.main .login-right .form .form-container .other-way-icon .iconfont {
+  font-size: 50px;
+}
+.main .login-right .form .form-container .other-way-icon .icon-qq {
+  color: #18ACFC;
+  font-size: 52px;
+}
+.main .login-right .form .form-container .other-way-icon .icon-weibo {
+  color: #EA5D5C;
+}
+.main .login-right .form .form-container .other-way-icon .icon-zhifubao {
+  color: #1989FA;
+}
+.main .login-right .form .form-container .other-way-icon .icon-weixin {
+  color: #50B674;
+}
+.main .login-right .records {
+  text-align: center;
+  color: #999;
+  letter-spacing: 0.05em;
+}

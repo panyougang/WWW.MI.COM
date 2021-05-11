@@ -1,0 +1,283 @@
+@import url(./reset.less);
+
+
+.footer {
+    background: #fff;
+
+    .footer-container {
+        width: 1226px;
+        margin: 0 auto;
+
+        .footer-serve {
+            padding: 27px 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+
+            .footer-serve-part {
+                flex-grow: 1;
+                color: #616161;
+                border-right: 1px solid #e0e0e0;
+
+                .icon-banshou {
+                    font-size: 22px !important;
+                }
+
+                .icon-7tianwuliyoutuihuo {
+                    font-size: 22px !important;
+                }
+
+                .icon-liwu {
+                    font-size: 20px !important;
+                }
+
+                .icon-didian {
+                    font-size: 20px !important;
+                }
+
+                span {
+                    transition: all 0.2s;
+                }
+            }
+
+            .footer-serve-part:hover span {
+                color: #ff6700;
+            }
+
+            .footer-serve-part>.iconfont {
+                font-size: 24px;
+            }
+
+
+        }
+
+        .footer-serve>:last-child {
+            border-right: none;
+        }
+
+        .footer-link {
+            padding: 40px 0;
+            display: flex;
+
+            .footer-link-list {
+                overflow: hidden;
+                float: left;
+
+                ul {
+                    float: left;
+                    width: 159px;
+                }
+
+                ul>li {
+                    color: #757575;
+                    margin-bottom: 10px;
+                }
+
+                ul>li:first-child {
+                    color: #424242;
+                    font-size: 14px;
+                    margin-bottom: 26px;
+                }
+
+                ul>li:not(:first-child):hover {
+                    color: #ff6700;
+                    cursor: pointer;
+                }
+            }
+
+            .footer-link-list>:last-child {
+                border-right: 1px solid #e0e0e0;
+            }
+
+            .footer-contact {
+                float: left;
+                flex-grow: 1;
+                text-align: center;
+
+            }
+
+            .footer-contact>:nth-child(1) {
+                color: #ff6700;
+                font-size: 22px;
+            }
+
+            .footer-contact>:nth-child(2) {
+                line-height: 24px;
+                color: #616161;
+            }
+
+            .footer-contact>:nth-child(3) {
+                display: inline-block;
+                width: 118px;
+                height: 28px;
+                line-height: 28px;
+                color: #ff6700;
+                border: 1px solid #ff6700;
+                transition: all 0.4s;
+
+                .icon-xiaoxi {
+                    vertical-align: top;
+                }
+            }
+
+            .footer-contact>:nth-child(3):hover {
+                background: #ff6700;
+                color: #fff;
+            }
+
+            .footer-contact>:nth-child(4) {
+                margin-top: 10px;
+                color: #616161;
+
+                .iconfont {
+                    font-size: 26px;
+                    padding-left: 5px;
+                    color: #616161;
+                    display: inline-block;
+                }
+
+                .icon-weixin1 {
+                    position: relative;
+                    font-size: 22px !important;
+
+                    img {
+                        position: absolute;
+                        width: 126px;
+                        height: 126px;
+                        top: 25px;
+                        left: -58px;
+                        display: none;
+                        z-index: 100;
+                    }
+                }
+
+                .icon-weibo1:hover {
+                    color: #ff6700;
+                }
+
+                .icon-weixin1:hover {
+                    color: #ff6700;
+                }
+
+                .icon-weixin1:hover>img {
+                    display: block;
+                }
+            }
+
+
+
+
+        }
+
+    }
+
+}
+
+.info {
+    background: #fafafa;
+    padding: 30px 0;
+
+    .info-container {
+        width: 1266px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .info-logo {
+            float: left;
+            width: 56px;
+            height: 56px;
+            background: url(../img/img-footer/logo-mi2.png) no-repeat no-repeat;
+            background-size: 100% 100%;
+            margin-right: 10px;
+        }
+
+        .info-right {
+            float: left;
+            line-height: 18px;
+            @a-color: #757575;
+
+            .info-hover {
+                a {
+                    color: @a-color;
+
+                }
+
+                a:hover {
+                    color: #ff6700;
+                }
+
+                span {
+                    padding: 0 4px;
+                }
+            }
+
+            .info-small {
+                color: #b0b0b0;
+
+                a {
+                    color: #b0b0b0;
+                }
+            }
+
+            .info-link {
+                margin-top: 3px;
+
+                a {
+                    margin-right: 2px;
+
+                    img {
+                        height: 28px;
+                        display: inline-block;
+                    }
+                }
+
+                .cut {
+                    overflow: hidden;
+                    width: 74px;
+                    height: 28px;
+                    display: inline-block;
+                    position: relative;
+
+                    div {
+                        width: 74px;
+                        height: 28px;
+                        display: inline-block;
+                        position: absolute;
+                        animation: cut 5s steps(2) infinite;
+
+                        img {
+                            position: absolute;
+
+                            &:last-child {
+                                left: 74px;
+                            }
+                        }
+                    }
+
+                    @keyframes cut {
+                        from {
+                            left: 0px;
+                        }
+
+                        to {
+                            left: -147px;
+                        }
+                    }
+
+                }
+
+
+
+            }
+        }
+    }
+}
+
+.footer-title {
+    height: 19px;
+    width: 100%;
+    background: url(../img/img-footer/slogan2020.png) no-repeat center;
+    margin-top: 40px;
+}

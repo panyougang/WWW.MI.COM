@@ -1,0 +1,322 @@
+@import url(./reset.less);
+
+@color: #555;
+@border: 1px solid #e8e8e8;
+
+body {
+    background: #F9F9F9;
+
+
+    .login {
+        width: 854px;
+        margin: 0 auto;
+        background: #FFFFFF url(../img/img-reg/logo.png) no-repeat center top;
+        padding-top: 90px;
+        position: relative;
+
+        .wenhao {
+            width: 24px;
+            height: 24px;
+            background: url(../img/img-reg/wenhao.png) no-repeat;
+            position: absolute;
+            top: 10px;
+            right: -48px;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 35px;
+            font-weight: normal;
+        }
+
+        .form {
+            width: 332px;
+            margin: 0 auto;
+            font-size: 14px;
+
+            .display {
+                display: block !important;
+            }
+
+            h4 {
+                font-weight: normal;
+            }
+
+            .city {
+                width: 332px;
+                height: 42px;
+                border: @border;
+                margin: 5px 0;
+                line-height: 42px;
+                padding-left: 14px;
+                box-sizing: border-box;
+                cursor: pointer;
+                position: relative;
+
+
+                .city-list {
+                    position: absolute;
+                    width: 100%;
+                    height: 270px;
+                    left: -1px;
+                    top: 42px;
+                    border: @border;
+                    border-top: none;
+                    overflow-y: scroll;
+                    background: #fff;
+                    display: none;
+                    z-index: 100;
+
+                    .cityInput {
+                        outline: none;
+                        border: @border;
+                        width: 274px;
+                        height: 22px;
+                        line-height: 22px;
+                        padding: 5px 10px 5px 10px;
+                        display: block;
+                        margin: 10px auto;
+                    }
+
+                    .data {
+                        .init {
+                            line-height: 30px;
+                            background: #fcdecc;
+                            margin-bottom: 5px;
+
+                            p {
+                                padding-left: 10px;
+                                color: #ef5b00;
+                            }
+                        }
+
+                        .data-city>li {
+                            padding-left: 10px;
+                            border-bottom: @border;
+                        }
+
+                        .data-city>li:hover {
+                            background: #EAEAEA;
+                        }
+
+                    }
+                }
+
+                .city-name {
+                    width: 200px;
+                    float: left;
+                    color: @color;
+                }
+
+                .ico {
+                    float: right;
+                    border-left: 1px solid #e8e8e8;
+                    width: 40px;
+                    height: 100%;
+
+                    span {
+                        display: block;
+                        margin: 0 auto;
+                        width: 20px;
+                        height: 100%;
+                        background: url(../img/img-reg/icon.png) no-repeat 3px 12px;
+                    }
+                }
+            }
+
+            p {
+                color: #666;
+            }
+
+            .phone-title {
+                margin-top: 16px;
+            }
+
+            .phoneName {
+                width: 331px;
+                height: 42px;
+                box-sizing: border-box;
+                border: @border;
+                margin-top: 8px;
+
+                .phone {
+                    float: left;
+                    width: 68px;
+                    height: 100%;
+                    border-right: 1px solid #e8e8e8;
+                    cursor: pointer;
+                    position: relative;
+
+                    .phone-city-list {
+                        position: absolute;
+                        width: 330px;
+                        height: 270px;
+                        left: -1px;
+                        top: 42px;
+                        border: @border;
+                        border-top: none;
+                        overflow-y: scroll;
+                        background: #fff;
+                        display: none;
+
+                        .cityInput {
+                            outline: none;
+                            border: @border;
+                            width: 274px;
+                            height: 22px;
+                            line-height: 22px;
+                            padding: 5px 10px 5px 10px;
+                            display: block;
+                            margin: 10px auto;
+                        }
+
+                        .data {
+                            .init {
+                                line-height: 30px;
+                                background: #fcdecc;
+                                margin-bottom: 5px;
+
+                                p {
+                                    padding-left: 10px;
+                                    color: #ef5b00;
+                                }
+                            }
+
+                            .data-city>li {
+                                padding-left: 10px;
+                                border-bottom: @border;
+                                line-height: 40px;
+                            }
+
+                            .data-city>li:hover {
+                                background: #EAEAEA;
+                            }
+
+                        }
+                    }
+
+                    .phone-num {
+                        height: 100%;
+                        float: left;
+                        color: @color;
+                        line-height: 40px;
+                        margin-left: 14px;
+                    }
+
+                    .jiantou {
+                        float: left;
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid #9d9d9d;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        margin: 17px 0 0 10px;
+                    }
+                }
+
+
+                .phoneInput {
+                    outline: none;
+                    border: 0;
+                    color: #333;
+                    display: block;
+                    margin-top: 11px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+
+            .msg {
+                margin-top: 8px;
+
+                // display: none;
+                i {
+                    color: #f66;
+                    font-style: normal;
+
+                    span {
+                        padding-left: 20px;
+                        background: url(../img/img-reg/icon.png) no-repeat -47px 0;
+                    }
+                }
+
+            }
+
+            .right-reg {
+                outline: none;
+                border: none;
+                width: 330px;
+                height: 42px;
+                background: #ff6700;
+                line-height: 42px;
+                text-align: center;
+                color: #fff;
+                margin-top: 15px;
+                cursor: pointer;
+
+            }
+
+            .right-reg:hover {
+                opacity: 0.5;
+            }
+
+            .agree {
+                text-align: center;
+                margin-top: 80px;
+                color: #9d9d9d;
+                cursor: pointer;
+                padding-bottom: 42px;
+
+                a {
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    @color-sp: #333;
+
+    .language {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #757575;
+
+        span {
+            padding: 0 10px;
+        }
+
+        span:hover {
+            color: @color-sp;
+            cursor: pointer;
+        }
+
+        .sp-fis {
+            color: @color-sp;
+        }
+    }
+
+    .record {
+        text-align: center;
+        padding: 15px 0 25px 0;
+        color: #9d9d9d;
+        font-size: 14px;
+
+        span {
+            padding-left: 19px;
+            padding-top: 8px;
+            background: url(../img/img-reg/jinghui.png) no-repeat;
+            cursor: pointer;
+        }
+
+        a {
+            color: #9d9d9d;
+            cursor: pointer;
+        }
+    }
+}

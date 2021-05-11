@@ -1,0 +1,472 @@
+@import url(./reset.less);
+
+.square-color {
+    background-color: #ff6700;
+}
+
+.settle {
+    background-color: #f5f5f5;
+
+    .settle-container {
+        font-size: 12px;
+        border-bottom: 2px solid #ff6700;
+        background: #fff;
+        color: #757575;
+        height: 100px;
+
+        .settle-title {
+            width: 1226px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .settle-title-left {
+                display: flex;
+                align-items: center;
+
+                .settle-logo {
+                    width: 48px;
+                    height: 48px;
+                    display: inline-block;
+                    background: url(../img/img-shopping/logo-mi2.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+
+                h3 {
+                    font-size: 28px;
+                    font-weight: 400;
+                    color: #424242;
+                    margin-left: 48px;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-top: 16px;
+                    margin-left: 14px;
+                }
+            }
+
+            .settle-title-right {
+                color: #757575;
+
+                .user-id {
+                    display: inline-block;
+                    padding: 0 30px;
+                    font-size: 12px;
+                    color: #757575;
+                    position: relative;
+                    transition: all 0.2s;
+
+                    &:hover .user-id-warp {
+                        color: @color;
+                        cursor: pointer;
+                    }
+
+                    &:hover .user-menu {
+                        height: 170px;
+                    }
+
+                    .icon-xiangxia {
+                        font-size: 10px;
+                        position: absolute;
+                        margin-left: 5px;
+                        top: 0;
+                    }
+
+                    .user-menu {
+                        position: absolute;
+                        left: 18px;
+                        box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+                        top: 22px;
+                        background: #fff;
+                        height: 0px;
+                        transition: all 0.4s;
+                        overflow: hidden;
+                        z-index: 100;
+
+                        ul {
+                            width: 110px;
+                            margin: 0;
+                            padding: 15px 0 15px 0;
+
+                            li {
+                                transition: all .2s;
+
+                                a {
+                                    display: inline-block;
+                                    color: #424242;
+                                    transition: all 0.2s;
+                                    padding: 6px 30px;
+                                }
+
+                                &:hover a {
+                                    background: #F5F5F5;
+                                    color: @color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .my-order {
+                    color: #757575;
+                    padding: 0 10px;
+
+                    &:hover {
+                        color: @color;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .settle-product {
+        padding-top: 40px;
+
+        .settle-product-container {
+            width: 1226px;
+            margin: 0 auto;
+            background: #fff;
+
+            .square-select {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                border: 1px solid#ff6700;
+                text-align: center;
+                font-weight: 900;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .settle-product-operate {
+                padding: 26px 26px;
+
+
+                .square-select-title {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #424242;
+                }
+
+                .square-select-title>:nth-child(1) {
+                    margin-left: 10px;
+                }
+
+                .square-select-title>:nth-child(2) {
+                    margin-left: 144px;
+                }
+
+                .square-select-title>:nth-child(3) {
+                    margin-left: 370px;
+                }
+
+                .square-select-title>:nth-child(4) {
+                    margin-left: 140px;
+                }
+
+                .square-select-title>:nth-child(5) {
+                    margin-left: 140px;
+                }
+
+                .square-select-title>:nth-child(6) {
+                    margin-left: 110px;
+                }
+            }
+
+            .settle-product-part {
+                border-top: 1px solid #e0e0e0;
+                padding: 15px 26px 15px 26px;
+
+                .settle-part-title {
+                    display: flex;
+                    align-items: center;
+
+                    .square-select-img {
+                        margin-left: 70px;
+                        cursor: pointer;
+                    }
+
+                    .square-select-img-title {
+                        color: #424242;
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin-left: 38px;
+                    }
+
+                    .price1 {
+                        color: #424242;
+                        font-size: 18px;
+                        margin-left: 152px;
+                    }
+
+                    .count-change {
+                        display: inline-block;
+                        width: 150px;
+                        height: 40px;
+                        border: 1px solid #e0e0e0;
+                        background-color: #fff;
+                        display: flex;
+                        font-size: 12px;
+                        margin-left: 70px;
+
+                        span {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+
+                        .icon-jianhao {
+                            flex: 1;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 20px;
+                            transition: all .2s;
+
+                            &:hover {
+                                background: #E0E0E0;
+                                cursor: pointer;
+
+                            }
+                        }
+
+                        .count {
+                            width: 72px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 38px;
+
+                        }
+
+                        .icon-jiahao {
+                            flex: 1;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            font-size: 12px;
+                            transition: all .2s;
+
+                            &:hover {
+                                background: #E0E0E0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .price2 {
+                        color: @color;
+                        font-size: 18px;
+                        margin-left: 56px;
+                    }
+
+                    .icon-close {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border-radius: 12px;
+                        color: #757575;
+                        transition: all .4s;
+                        margin-left: 110px;
+                        font-size: 14px;
+
+                        &:hover {
+                            background: #E53935;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+
+                .settle-part-gift {
+                    padding-left: 82px;
+                    margin-top: 15px;
+
+                    .gift-container {
+                        padding: 20px 0;
+                        display: flex;
+                        align-items: center;
+                        background-color: #f5f5f5;
+                        position: relative;
+
+                        .mark {
+                            position: absolute;
+                            border-bottom: 10px solid #f5f5f5;
+                            border-top: 10px solid transparent;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            top: -20px;
+                            left: 38px;
+                        }
+
+                        .gift-img {
+                            margin-left: 18px;
+                        }
+
+                        .gift-info {
+                            margin-left: 50px;
+
+                            &>:nth-child(1) {
+                                background-color: #e53935;
+                                width: 60px;
+                                height: 18px;
+                                line-height: 18px;
+                                text-align: center;
+                                color: #fff;
+                                font-size: 12px;
+                            }
+
+                            &>:nth-child(2) {
+                                color: #424242;
+                                font-size: 16px;
+                                line-height: 36px;
+                                display: block;
+                            }
+
+                            &>:nth-child(3) {
+                                color: @color;
+                            }
+                        }
+
+                        .gift-count {
+                            font-size: 16px;
+                            margin-left: 452px;
+                        }
+                    }
+                }
+
+                .settle-part-service {
+                    padding-left: 82px;
+                    margin-top: 15px;
+
+                    .settle-part-col {
+                        margin-bottom: 15px;
+                    }
+
+                    .settle-service-container {
+                        border: 1px solid #e0e0e0;
+                        display: flex;
+                        padding: 16px 18px;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: all .4s;
+
+                        &:hover {
+                            background-color: #FAFAFA;
+                        }
+
+                        .service-info {
+                            .icon-jiahao {
+                                line-height: 22px;
+                                display: inline-block;
+                                width: 22px;
+                                height: 22px;
+                                font-size: 12px;
+                                font-weight: bold;
+                                border-radius: 50%;
+                                text-align: center;
+                                background: #ff6700;
+                                color: #fff;
+                                vertical-align: middle;
+                            }
+
+                            .info-price {
+                                color: #424242;
+                                font-size: 14px;
+                                margin-left: 15px;
+                            }
+
+                            .info-other {
+                                color: @color;
+                                font-size: 14px;
+                                margin-left: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .accounts {
+        width: 1226px;
+        margin: 20px auto;
+        margin-bottom: 0;
+
+        .scroll-bottom {
+            width: 1198px;
+            height: 0px;
+            bottom: 0;
+            overflow: hidden;
+            box-shadow: 0 -3px 6px rgb(0 0 0 / 10%);
+            z-index: 200;
+            // transition: all 0.1s;
+        }
+
+        .accounts-container {
+            background: #fff;
+            padding-left: 28px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            justify-content: space-between;
+
+            .accounts-a1 {
+                color: #757575;
+                border-right: 1px solid #e0e0e0;
+                padding-right: 24px;
+            }
+
+            .accounts-span1 {
+                color: #757575;
+                margin-left: 18px;
+
+                b {
+                    font-weight: normal;
+                    color: @color;
+                }
+            }
+
+            .accounts-span2 {
+                color: #ff6700;
+
+                vertical-align: middle;
+
+                b {
+                    font-weight: normal;
+                    font-size: 30px;
+                }
+            }
+
+            .accounts-a3 {
+                display: inline-block;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                margin-left: 50px;
+                background: #ff6700;
+                border-color: #ff6700;
+                color: #fff;
+                text-align: center;
+                transition: all 0.4s;
+
+                &:hover {
+                    background: #F25807;
+                }
+            }
+        }
+    }
+
+}
+
+
+@import url(./shopping-succeed.less);
